@@ -2,6 +2,12 @@ const baddieForm = document.baddies;
 
 baddieForm.addEventListener('submit', event => {
     event.preventDefault()
+
     let goombaQty = baddieForm.goombas.value;
-    console.log(goombaQty);
+    let bobombQty = baddieForm.bobombs.value;
+    let cheepQty = baddieForm.cheeps.value;
+    //let lblTotal = document.getElementById('totalPrice');
+    let total = Number(goombaQty * 5) + Number(bobombQty * 7) + Number(cheepQty * 11);
+
+    //lblTotal.innerHTML = `Total Price: ${total} Coins`;
 });
