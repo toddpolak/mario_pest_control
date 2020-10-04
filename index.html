@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Mario Pest Control</title>
-        <link rel="stylesheet"  href="css/style.css">
+        <title>Mario's Pest Control</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
-            <a href="https://ibb.co/7tNCNPC" target="_blank"><img src="img/Mario.png" width="250px" height="300px"></a>
+            <img src="img/Mario.png" width="250px" height="300px">
             <h1 id="mario">Mario's Pest Control</h1>
         </header>
         <main>
-            <ul id="list">
-                <form name="baddies">
-                    <li><h2>Goombas = 5 Coins</h2></li>
-                    <a href="https://ibb.co/QvZq9Fc" target="_blank"><img src="img/goomba.png" height="200px" width="200px"></a>
-                    <input type="number" name="goombas" placeholder="Amount Captured">
-                    <li><h2>Bob-ombs = 7 Coins</h2></li>
-                    <a href="https://ibb.co/55W7n75" target="_blank"><img src="img/bob.jpg" height="200px" width="200px"></a>
-                    <input type="number" name="bobombs" placeholder="Amount Captured">
-                    <li><h2>Cheep-cheeps = 11 Coins</h2></li>
-                    <a href="https://ibb.co/X2hXz22" target="_blank"><img src="img/Cheep-Cheep.png" height="150px" width="150px"></a>
-                    <input type="number" name="cheeps" placeholder="Amount Captured">
-                    <div>
-                        <button type="submit" name="button"><h2>Total Cost</h2></button><label id="totalCost"></label>
-                    </div>
-                </form>
-            </ul>
+            <form name="baddies">
+                <ul id="list">
+                    <li>
+                        <label class="items">Goombas = 5 Coins</label>
+                        <img src="img/goomba.png" height="200px" width="200px">
+                        <input type="number" name="goombas" placeholder="Amount Captured">
+                    </li>
+                    <li>
+                        <label class="items">Bob-ombs = 7 Coins</label>
+                        <img src="img/bob.png" height="200px" width="200px">
+                        <input type="number" name="bobombs" placeholder="Amount Captured">
+                    </li>
+                    <li>
+                        <label class="items">Cheep-cheeps = 11 Coins</label>
+                        <img src="img/Cheep-Cheep.png" height="150px" width="150px">
+                        <input type="number" name="cheeps" placeholder="Amount Captured">
+                    </li>
+                </ul>
+                <div id="total">
+                    <button type="submit" name="button"><h2>Calculate Total</h2></button>
+                    <label id="totalCost"></label>
+                </div>
+            </form>
         </main>
         <footer>
             <div>
